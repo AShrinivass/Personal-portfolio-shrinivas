@@ -30,15 +30,17 @@ function BentoGrid() {
   ];
   return (
     <>
-      <div className="grid grid-cols-3 gap-4 min-h-[400px] mt-10 mx-10">
-        {bentoItems.map((item) => (
-          <div
-            className={`font-bold border-8 border-white rounded-md bg-[#f5f5f7] rounded-lg backdrop-blur-lg shadow-xl ${item.className}`}
-            key={item.id}
-          >
-            {item.title}
-          </div>
-        ))}
+      <div className="flex justify-center">
+        <div className="grid grid-cols-3 gap-4 min-h-[400px] mt-10 mx-10 w-[70%]">
+          {bentoItems.map((item) => (
+            <div
+              className={` bg-white/80 dark:bg-[#121826]/10 border border-gray-300 dark:border-white/10 shadow-md dark:shadow-[0_4px_20px_rgba(0,162,255,0.15)] text-gray-800 dark:text-gray-100 rounded-md z-10 ${item.className}`}
+              key={item.id}
+            >
+              {item.title}
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
