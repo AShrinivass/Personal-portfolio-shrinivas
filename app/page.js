@@ -11,7 +11,6 @@ export default function page() {
         <Layout>
           <Navbar />
           <Hero />
-          <Social />
           <BentoGrid />
           <main>Home</main>
         </Layout>
