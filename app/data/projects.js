@@ -1,10 +1,10 @@
 export const projects = [
   {
     id: 1,
-    title: "Todo list app with reux for state managament",
+    title: "Todo list app(redux)",
     desc: "Made a simple todo list app and gave it a little complex touch by using redux for state management",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/js.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/js.svg", "/fm.svg"],
     bulletPoints: ["Used Redux for state management", "Hooks used sdsdsd"],
   },
   {
@@ -12,7 +12,7 @@ export const projects = [
     title: "Netflix clone project",
     desc: "Created a netflix app clone using react",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/js.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/js.svg", "/fm.svg"],
     bulletPoints: [
       "Netflix clone",
       "Smooth orbit animations around the sun",
@@ -25,7 +25,7 @@ export const projects = [
     title: "Full stack social media project",
     desc: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
     img: "/pd.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
     bulletPoints: [
       "Adu idu",
       "Smooth orbit animations around the sun",
@@ -38,7 +38,7 @@ export const projects = [
     title: "Movie recommendation system",
     desc: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
     bulletPoints: [
       "Realistic 3D planet models with textures",
       "Smooth orbit animations around the sun",

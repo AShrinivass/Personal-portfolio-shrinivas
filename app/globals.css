@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  background-color: #000319;
+}
+
 @theme inline {
   --animate-spotlight: spotlight 5s ease 0.75s 1 forwards;
   --animate-move: move 5s linear infinite;
