@@ -1,8 +1,7 @@
-import BentoGrid from "./components/BentoGrid";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Social from "./components/Social";
 import Layout from "./components/ui/Layout";
+import Projects from "./components/Projects";
 
 export default function page() {
   return (
@@ -11,8 +10,7 @@ export default function page() {
         <Layout>
           <Navbar />
           <Hero />
-          <BentoGrid />
-          <main>Home</main>
+          <Projects />
         </Layout>
       </div>
     </>

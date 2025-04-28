@@ -1,9 +1,38 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 function Navbar() {
+  const [showNav, setShowNav] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+
+      if (currentScroll > lastScrollY && currentScroll > 50) {
+        setShowNav(false);
+      } else {
+        setShowNav(true);
+      }
+      setLastScrollY(currentScroll);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <div className="fixed top-0 left-0 right-0 mt-7 flex justify-center z-15">
+    <motion.div
+      initial={{ y: 0 }}
+      animate={{ y: showNav ? 0 : -100 }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+      className="fixed top-0 left-0 right-0 mt-7 flex justify-center z-15 "
+    >
       <div className="w-[40%] h-13 rounded-lg items-center flex mx-5 backdrop-blur-md bg-white/80 dark:bg-[#121826]/80 border border-gray-300 dark:border-white/10 shadow-md dark:shadow-[0_4px_20px_rgba(0,162,255,0.15)] text-gray-800 dark:text-gray-100">
         <ul className="flex w-[100%] mx-5">
           <li>
@@ -41,7 +70,7 @@ function Navbar() {
           ></img>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

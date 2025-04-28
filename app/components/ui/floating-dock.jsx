@@ -14,15 +14,6 @@ import {
   useTransform,
 } from "motion/react";
 
-import {
-  IconBrandGithub,
-  IconMail,
-  IconBrandLinkedin,
-  IconBrandInstagram,
-  IconDownload,
-  IconFileText,
-} from "@tabler/icons-react";
-
 import { useRef, useState } from "react";
 
 export const FloatingDock = ({ items, desktopClassName, mobileClassName }) => {
