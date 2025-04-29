@@ -7,7 +7,7 @@ function Projects() {
       {projects.map((project) => (
         <div
           key={project.id}
-          className="rounded-3xl p-5 bg-gradient-to-br from-[#04071D] via-[#04071D] to-[#0C0E23] rounded-[23px] border border-[#363749] w-[80vw] sm:w-96"
+          className=" p-5 bg-gradient-to-br from-[#04071D] via-[#04071D] to-[#0C0E23] rounded-[23px] border border-[#363749] w-[80vw] sm:w-96 h-[550px] flex flex-col justify-between"
         >
           <div className="w-full h-48 overflow-hidden rounded-2xl mb-6 relative">
             <img
@@ -21,8 +21,10 @@ function Projects() {
             {project.title}
           </h1>
 
-          <p className="text-gray-400 text-base mb-4">{project.desc}</p>
-          <p className="text-gray-400 text-base mb-4">
+          <p className="text-gray-400 text-base mb-4 overflow-hidden max-h-24 custom-scroll">
+            {project.desc}
+          </p>
+          <div className="text-gray-400 text-base mb-4 overflow-hidden max-h-24 custom-scroll">
             {project.bulletPoints.map((point, index) => {
               return (
                 <li key={index} className="">
@@ -30,7 +32,7 @@ function Projects() {
                 </li>
               );
             })}
-          </p>
+          </div>
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4 mt-4">
               {project.iconLists.map((icon, index) => (
