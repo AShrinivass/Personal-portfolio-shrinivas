@@ -1,18 +1,10 @@
 import React from "react";
-import { SparklesCore } from "./ui/sparkles";
-import { FloatingDock } from "./ui/floating-dock";
-import {
-  IconBrandGithub,
-  IconMail,
-  IconBrandLinkedin,
-  IconBrandInstagram,
-  IconDownload,
-  IconFileText,
-} from "@tabler/icons-react";
+import { Spotlight } from "./ui/Spotlight";
 
 function Hero() {
   return (
     <>
+      <Spotlight className={``} />
       <div className="relative flex justify-center items-center h-screen overflow-hidden pt-15">
         <div className="relative z-10 text-center min-w-screen h-1/2 text-white">
           <div className="h-1/2 my-20 ">
@@ -30,21 +22,7 @@ function Hero() {
               Temporibus, neque.
             </p>
           </div>
-          <div className="mt-35">
-            <FloatingDock
-              items={[
-                { title: "Github", icon: <IconBrandGithub />, href: "/" },
-                {
-                  title: "Linkedin",
-                  icon: <IconBrandLinkedin />,
-                  href: "/projects",
-                },
-                { title: "Email", icon: <IconMail />, href: "/contact" },
-              ]}
-              desktopClassName="fixed bottom-4"
-              mobileClassName="fixed bottom-4 right-4"
-            />
-          </div>
+          <div className="mt-35"></div>
         </div>
       </div>
     </>
