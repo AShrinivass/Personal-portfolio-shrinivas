@@ -1,92 +1,89 @@
 "use client";
 import React from "react";
 import { projects } from "../data/projects";
-import { motion } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
 function Projects() {
   return (
-    <>
-      <div className="flex justify-center items-center flex-col mt-20 mb-10">
-        <h1 className="font-inter font-bold text-[48px] leading-[100%] text-white mb-4 mt-30">
-          Recent{" "}
-          <span className="font-inter font-bold text-[48px] leading-[100%] text-purple-500">
-            projects
-          </span>
+    <div className="bg-[#7d98a1] rounded-t-3xl pt-16 pb-12 px-4 sm:px-10">
+      <div className="text-center mb-12">
+        <h1 className="text-[#fff4e4] font-extrabold text-4xl sm:text-5xl tracking-wide">
+          BUILT WITH{" "}
+          <span className="text-[#ffb084] drop-shadow-sm">PASSION</span>
         </h1>
+        <p className="mt-2 text-[#fef4e7]/80 text-lg">
+          Pure, Honest and Damn Useful Projects 🍺
+        </p>
       </div>
-      <div className="p-5 flex items-center flex-wrap justify-center gap-8">
+
+      <Swiper
+        effect="coverflow"
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView="auto"
+        spaceBetween={30}
+        loop={true}
+        coverflowEffect={{
+          rotate: 25,
+          stretch: 0,
+          depth: 120,
+          modifier: 2.5,
+          slideShadows: false,
+        }}
+        pagination={{ clickable: true }}
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
+      >
         {projects.map((project) => (
-          <motion.div
+          <SwiperSlide
             key={project.id}
-            className=" p-5 bg-gradient-to-br from-[#04071D] via-[#04071D] to-[#0C0E23] rounded-[23px] border border-[#363749] w-[80vw] sm:w-96 h-[550px] flex flex-col justify-between"
-            whileHover={{
-              scale: 1.03,
-              boxShadow: "0px 10px 25px rgba(128, 90, 213, 0.3)",
-            }}
-            whileTap={{ scale: 0.98 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            style={{ width: "100%", maxWidth: "400px" }} // Ensure it scales properly on smaller screens
+            className="bg-[#fdf6ec] rounded-[20px] p-6 shadow-lg md:w-[400px] sm:w-[320px]"
           >
-            <div className="w-full h-48 overflow-hidden rounded-2xl mb-6 relative">
-              <img
-                src="lul.jpg"
-                alt="cover"
-                className="object-cover w-full h-full rounded-2xl"
-              />
-            </div>
-
-            <h1 className="text-2xl font-bold text-white mb-2">
+            <img
+              src="lul.jpg"
+              alt={project.title}
+              className="rounded-lg mb-4 w-full h-[200px] object-cover"
+            />
+            <h2 className="text-[#3a2f2b] text-xl font-bold mb-2">
               {project.title}
-            </h1>
-
-            <p className="text-gray-400 text-base mb-4 overflow-hidden max-h-24 custom-scroll">
+            </h2>
+            <p className="text-[#4b413b] text-sm mb-3 max-h-20 overflow-hidden">
               {project.desc}
             </p>
-            <div className="text-gray-400 text-base mb-4 overflow-hidden max-h-24 custom-scroll">
-              {project.bulletPoints.map((point, index) => {
-                return (
-                  <li key={index} className="">
-                    {point}
-                  </li>
-                );
-              })}
-            </div>
-            <div className="flex justify-between items-center">
-              <div className="flex items-center space-x-4 mt-4">
+            <ul className="text-[#645f59] text-sm list-disc list-inside space-y-1 mb-4">
+              {project.bulletPoints.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
+            <div className="flex justify-between items-center mt-auto">
+              <div className="flex -space-x-3">
                 {project.iconLists.map((icon, index) => (
                   <img
                     key={index}
                     src={icon}
                     alt=""
-                    className="border border-white/20 
-                 shadow-md shadow-white/10 
-                 rounded-full 
-                 bg-[#232336] 
-                 lg:w-10 lg:h-10 w-8 h-8 
-                 flex justify-center items-center 
-                 -ml-5 first:ml-0 
-                 backdrop-blur-sm 
-                 transition-transform hover:scale-110
-                 p-1.5"
+                    className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border-2 border-[#d4c0a1] bg-[#fbf5eb] hover:scale-110 transition-transform"
                   />
                 ))}
               </div>
-
-              <button className="mt-6 border border-[#363749] p-1.5 rounded-lg flex items-center hover:bg-[#232336]">
-                <a
-                  href={project.liveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-indigo-400 flex items-center gap-1 text-sm"
-                >
-                  Check Live Site
-                  <span>↗</span>
-                </a>
-              </button>
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#a85e3e] border border-[#d2a67a] px-3 py-1 rounded-full text-sm hover:bg-[#ffe5c0] transition"
+              >
+                View Site ↗
+              </a>
             </div>
-          </motion.div>
+          </SwiperSlide>
         ))}
-      </div>
-    </>
+      </Swiper>
+    </div>
   );
 }
 

@@ -46,4 +46,17 @@ export const projects = [
       "Optimized web and mobile",
     ],
   },
+  {
+    id: 5,
+    title: "Movie recommendation system",
+    desc: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    img: "/p1.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
+    bulletPoints: [
+      "Realistic 3D planet models with textures",
+      "Smooth orbit animations around the sun",
+      "Built with Three.js and React Three Fiber",
+      "Optimized web and mobile",
+    ],
+  },
 ];
