@@ -17,7 +17,7 @@ function Nav() {
     <div
       className={`flex items-center px-10 h-20 sticky top-0 z-50 
       transition-all duration-500 ease-in-out backdrop-blur-lg bg-opacity-30 ${
-        isScroll ? "backdrop-blur-md bg-[6F826A#]/60 shadow-md" : "bg-[#6F826A]"
+        isScroll ? "backdrop-blur-md bg-[#b26e70]/20 shadow-md" : "bg-[#b26e70]"
       }`}
     >
       {/* Left border with grow effect */}

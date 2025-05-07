@@ -7,9 +7,9 @@ export default function ScrollSection({ children, bgColor = "bg-white" }) {
       <motion.section
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }} // smoother cubic-bezier
-        viewport={{ once: true, amount: 0.3 }} // triggers earlier for smoother entry
-        className={`relative z-20 px-6 py-16 ${bgColor} rounded-3xl shadow-2xl mx-auto`}
+        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+        viewport={{ once: true, amount: 0.3 }}
+        className={`relative z-20 px-6 py-16 ${bgColor} rounded-t-3xl shadow-t-3xl mx-auto`}
       >
         {children}
       </motion.section>
