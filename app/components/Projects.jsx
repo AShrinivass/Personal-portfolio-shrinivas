@@ -9,15 +9,12 @@ import "swiper/css/pagination";
 
 function Projects() {
   return (
-    <div className="bg-[#7d98a1] rounded-t-3xl pt-16 pb-12 px-4 sm:px-10">
+    <div className="bg-[#7d98a1] rounded-t-3xl pt-16 pb-12 px-4 sm:px-10 will-change-transform">
       <div className="text-center mb-12">
         <h1 className="text-[#fff4e4] font-extrabold text-4xl sm:text-5xl tracking-wide">
           BUILT WITH{" "}
           <span className="text-[#ffb084] drop-shadow-sm">PASSION</span>
         </h1>
-        <p className="mt-2 text-[#fef4e7]/80 text-lg">
-          Pure, Honest and Damn Useful Projects 🍺
-        </p>
       </div>
 
       <Swiper
@@ -28,10 +25,10 @@ function Projects() {
         spaceBetween={30}
         loop={true}
         coverflowEffect={{
-          rotate: 25,
+          rotate: 20, // reduced from 25 for smoother rotation
           stretch: 0,
-          depth: 120,
-          modifier: 2.5,
+          depth: 80, // reduced from 120 to lower GPU strain
+          modifier: 1.8, // reduced from 2.5 to ease effect load
           slideShadows: false,
         }}
         pagination={{ clickable: true }}
@@ -41,12 +38,13 @@ function Projects() {
         {projects.map((project) => (
           <SwiperSlide
             key={project.id}
-            style={{ width: "100%", maxWidth: "400px" }} // Ensure it scales properly on smaller screens
-            className="bg-[#fdf6ec] rounded-[20px] p-6 shadow-lg md:w-[400px] sm:w-[320px]"
+            style={{ width: "100%", maxWidth: "400px", height: "70%" }}
+            className="bg-[#fdf6ec] rounded-[20px] p-6 shadow-lg md:w-[400px] sm:w-[320px] transition-all duration-300 will-change-transform [backface-visibility:hidden] [transform-style:preserve-3d]"
           >
             <img
               src="lul.jpg"
               alt={project.title}
+              loading="lazy"
               className="rounded-lg mb-4 w-full h-[200px] object-cover"
             />
             <h2 className="text-[#3a2f2b] text-xl font-bold mb-2">
@@ -61,13 +59,14 @@ function Projects() {
               ))}
             </ul>
             <div className="flex justify-between items-center mt-auto">
-              <div className="flex -space-x-3">
+              <div className="flex -space-x-2">
                 {project.iconLists.map((icon, index) => (
                   <img
                     key={index}
                     src={icon}
+                    loading="lazy"
                     alt=""
-                    className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border-2 border-[#d4c0a1] bg-[#fbf5eb] hover:scale-110 transition-transform"
+                    className="p-1 w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-black/20 bg-[#fbf5eb] hover:scale-110 transition-transform duration-300 ease-out"
                   />
                 ))}
               </div>

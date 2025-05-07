@@ -28,7 +28,7 @@ const techStackIcons = [
 
 function AboutMe() {
   return (
-    <div className="bg-[#fff4e4] text-[#2c2c2c] px-5 py-16">
+    <div className="bg-[#fff4e4] text-[#2c2c2c] px-5">
       <h2 className="text-3xl font-bold mb-8 text-center text-[#201c1c]">
         About Me
       </h2>

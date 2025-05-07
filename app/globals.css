@@ -1,12 +1,13 @@
 @import "tailwindcss";
-@import 'swiper/css';
-@import 'swiper/css/effect-coverflow';
-@import 'swiper/css/pagination';
-
+@import "swiper/css";
+@import "swiper/css/effect-coverflow";
+@import "swiper/css/pagination";
 
 body {
   font-family: var(--font-geist-mono), monospace;
-  /* Fall back to monospace if the font isn't loaded */
+}
+body {
+  background-color: #6f826a;
 }
 
 @theme inline {
@@ -47,7 +48,7 @@ body {
   animation: marqueeRTL 25s linear infinite;
 }
 
-  /* hide scrollbar for Chrome, Safari and Opera */
+/* hide scrollbar for Chrome, Safari and Opera */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
@@ -57,4 +58,3 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-

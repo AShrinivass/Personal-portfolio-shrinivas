@@ -16,13 +16,15 @@ function Nav() {
   return (
     <div
       className={`flex items-center px-10 h-20 sticky top-0 z-50 
-      transition-all duration-500 ease-in-out backdrop-blur-lg bg-opacity-30`}
+      transition-all duration-500 ease-in-out backdrop-blur-lg bg-opacity-30 ${
+        isScroll ? "backdrop-blur-md bg-[6F826A#]/60 shadow-md" : "bg-[#6F826A]"
+      }`}
     >
       {/* Left border with grow effect */}
       <div className="flex-1 h-full relative overflow-hidden">
         <div
-          className={`absolute bottom-0 left-0 h-px bg-amber-50 
-          transition-all duration-700 ease-in-out
+          className={`absolute bottom-0 left-0 h-px
+          transition-all duration-700 ease-in-out 
           ${isScroll ? "w-full" : "w-0"}`}
           style={{ transformOrigin: "left center" }}
         />
