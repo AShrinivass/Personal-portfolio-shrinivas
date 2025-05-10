@@ -34,7 +34,7 @@ function Contact() {
   };
   return (
     <>
-      <div className="px-5 flex flex-col items-center rounded-t-3xl">
+      <div className="px-5 flex flex-col items-center rounded-t-3xl min-h-[80vh] md:min-h-screen">
         <h2 className="text-3xl font-bold text-[#f2e6d8] mb-8">
           Let's get in touch
         </h2>

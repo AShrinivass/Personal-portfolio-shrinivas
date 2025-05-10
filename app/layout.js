@@ -1,8 +1,8 @@
-import { Geist_Mono } from "next/font/google";
+import { League_Spartan } from "next/font/google";
 import "./globals.css";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const geistMono = League_Spartan({
+  variable: "--font-league-spartan",
   subsets: ["latin"],
 });
 
