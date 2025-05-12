@@ -34,7 +34,7 @@ function Contact() {
   };
   return (
     <>
-      <div className="px-5 flex flex-col items-center rounded-t-3xl min-h-[80vh] md:min-h-screen">
+      <div className="px-5 flex flex-col items-center rounded-t-3xl md:mt-10">
         <h2 className="text-3xl font-bold text-[#f2e6d8] mb-8">
           Let's get in touch
         </h2>
@@ -43,7 +43,7 @@ function Contact() {
           onSubmit={sendEmail}
           action="#"
           method="POST"
-          className="bg-[#2a2525] rounded-lg p-8 w-full max-w-md"
+          className="bg-[#2a2525] rounded-lg p-8 w-full max-w-md md:mt-10"
           style={{
             boxShadow: `
             0 4px 8px rgba(0, 0, 0, 0.2),

@@ -63,12 +63,11 @@ export const projects = [
     title: "Personal Portfolio website",
     desc: "A sleek developer portfolio showcasing my projects, skills, and contact details with smooth transitions and a modern layout.",
     img: "portfolio.png",
-    iconLists: ["/Next.js.svg", "/tail.svg", "/js.svg"],
+    iconLists: ["/Next.js.svg", "/tail.svg", "/js.svg", "fm.svg"],
     bulletPoints: [
       "Built with Next.js and Tailwind CSS",
       "Animated sections using Framer Motion",
       "Responsive design for mobile and desktop",
-
     ],
   },
 ];

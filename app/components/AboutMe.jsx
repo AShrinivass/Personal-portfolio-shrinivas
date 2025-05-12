@@ -88,7 +88,7 @@ const toolIcons = [
 
 function AboutMe() {
   return (
-    <div className=" text-[#2c2c2c] px-5 rounded-lg min-h-[80vh] md:min-h-screen">
+    <div className=" text-[#2c2c2c] px-5 rounded-lg min-h-[80vh] md:min-h-screen md:mt-10">
       <h2 className="text-4xl font-bold mb-8 text-center text-[#201c1c]">
         <Typewriter
           onInit={(typewriter) => {
@@ -96,7 +96,7 @@ function AboutMe() {
           }}
         />
       </h2>
-      <p className="text-lg md:text-xl leading-relaxed text-center max-w-4xl mx-auto">
+      <p className="text-lg md:text-xl leading-relaxed text-center max-w-4xl mx-auto md:mt-20">
         I’ve always been fascinated by tech — not just using it, but making it
         work for me. What started with a love for video games grew into a deeper
         interest in how computers think and operate.
@@ -114,7 +114,7 @@ function AboutMe() {
       </p>
 
       {/* Tech Stack */}
-      <div className="mb-10">
+      <div className="mb-10 md:mt-10">
         <h3 className="text-2xl font-semibold mb-5 text-[#201c1c] text-center">
           Tech Stack
         </h3>

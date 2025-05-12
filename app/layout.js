@@ -7,7 +7,12 @@ const geistMono = League_Spartan({
 });
 
 export const metadata = {
-  title: "Portfolio - Shrinivas",
+  title: "A Shrinivas | Bug Whisperer",
+  icons: {
+    icon: "/Shrnvs_ligt_logo.png",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   description: "My personal portfolio page",
 };
 

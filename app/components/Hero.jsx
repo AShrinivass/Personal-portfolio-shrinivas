@@ -7,9 +7,11 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from "react-icons/fa";
 
 function Hero() {
   return (
-    <div className="relative flex justify-center items-center min-h-screen bg-[#fef6f6] overflow-hidden">
+    <div className="relative flex justify-center items-center min-h-screen overflow-hidden">
+      {/* Particle background */}
       <ParticlesBackground />
 
+      {/* Main content */}
       <div className="text-center z-10">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -55,7 +57,7 @@ function Hero() {
             See My Work
           </a>
           <a
-            href="/resume.pdf"
+            href="/A_Shrinivas__resume_2025.pdf"
             download
             className="ml-4 inline-flex items-center gap-2 px-6 py-2 border-2 border-amber-50 text-amber-50 rounded-full hover:bg-white hover:text-[#b26e70] transition-colors duration-300"
           >
@@ -65,20 +67,20 @@ function Hero() {
 
         <div className="flex justify-center gap-6 mt-10 text-white text-xl">
           <a
-            href="https://github.com/AShrinivass"
+            href="https://github.com/yourusername"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/a-shrinivas"
+            href="https://linkedin.com/in/yourusername"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>
-          <a href="mailto:shrinivas_here@outlook.com">
+          <a href="mailto:your@email.com">
             <FaEnvelope />
           </a>
         </div>
