@@ -42,7 +42,7 @@ function Projects() {
             className="bg-[#fdf6ec] rounded-[20px] p-4 shadow-lg md:w-[400px] sm:w-[320px] transition-all duration-300 will-change-transform [backface-visibility:hidden] [transform-style:preserve-3d]"
           >
             <img
-              src="lul.jpg"
+              src={project.img}
               alt={project.title}
               loading="lazy"
               className="rounded-lg mb-4 w-full h-[200px] object-cover"
