@@ -8,10 +8,8 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from "react-icons/fa";
 function Hero() {
   return (
     <div className="relative flex justify-center items-center min-h-screen bg-[#fef6f6] overflow-hidden">
-      {/* Particle background */}
       <ParticlesBackground />
 
-      {/* Main content */}
       <div className="text-center z-10">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -67,20 +65,20 @@ function Hero() {
 
         <div className="flex justify-center gap-6 mt-10 text-white text-xl">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/AShrinivass"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/a-shrinivas"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>
-          <a href="mailto:your@email.com">
+          <a href="mailto:shrinivas_here@outlook.com">
             <FaEnvelope />
           </a>
         </div>
