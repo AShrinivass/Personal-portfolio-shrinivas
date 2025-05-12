@@ -68,6 +68,7 @@ export const projects = [
       "Built with Next.js and Tailwind CSS",
       "Animated sections using Framer Motion",
       "Responsive design for mobile and desktop",
+
     ],
   },
 ];
