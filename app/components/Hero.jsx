@@ -43,7 +43,6 @@ function Hero() {
           />
         </motion.div>
 
-        {/* CTA Button */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -67,14 +66,14 @@ function Hero() {
 
         <div className="flex justify-center gap-6 mt-10 text-white text-xl">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/AShrinivass"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/a-shrinivas/"
             target="_blank"
             rel="noopener noreferrer"
           >
