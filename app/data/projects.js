@@ -24,6 +24,7 @@ export const projects = [
       "Integrated dynamic routing for movie previews",
       "Mobile-first responsive layout",
     ],
+    liveLink: "https://netflix.shrinivas.fyi",
   },
   {
     id: 3,
@@ -57,6 +58,7 @@ export const projects = [
       "Search functionality to filter movies by title",
       "Add/remove favorites with persistent favorites page",
     ],
+    liveLink: "https://movie.shrinivas.fyi",
   },
   {
     id: 5,
@@ -69,5 +71,6 @@ export const projects = [
       "Animated sections using Framer Motion",
       "Responsive design for mobile and desktop",
     ],
+    liveLink: "https://shrinivas.fyi",
   },
 ];
