@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: "Todo list app(redux)",
     desc: "A modern and minimal Todo app that leverages Redux for centralized state management and seamless task handling.",
-    img: "Todo.png",
+    img: "/todo1.png",
     iconLists: ["/re.svg", "/tail.svg", "/js.svg", "/redux.svg"],
     bulletPoints: [
       "Implemented Redux Toolkit for scalable state management",
