@@ -56,7 +56,7 @@ function Hero() {
             See My Work
           </a>
           <a
-            href="/A_Shrinivas_resume2025.pdf"
+            href="/A_Shrinivas_2025.pdf"
             download
             className="ml-4 inline-flex items-center gap-2 px-6 py-2 border-2 border-amber-50 text-amber-50 rounded-full hover:bg-white hover:text-[#b26e70] transition-colors duration-300"
           >
