@@ -7,7 +7,7 @@ const geistMono = League_Spartan({
 });
 
 export const metadata = {
-  title: "A Shrinivas | Bug Whisperer",
+  title: "A. Shrinivas",
   icons: {
     icon: "/Shrnvs_ligt_logo.png",
     shortcut: "/favicon.ico",
